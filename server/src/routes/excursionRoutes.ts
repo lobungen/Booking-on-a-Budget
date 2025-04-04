@@ -1,10 +1,8 @@
 import express from 'express';
 import { getAllExcursions, createExcursion } from '../controllers/excursionController';
-import authenticate from '../middleware/auth';
-import excursionRoutes from './routes/excursionRoutes';
+import authenticate from '../middleware/auth'; // ✅ Use this one
 
 
-app.use('/api/excursions', excursionRoutes);
 
 const router = express.Router();
 
