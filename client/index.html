@@ -7,7 +7,62 @@
     <title>Vite + React</title>
   </head>
   <body>
+    
+    <h1>Booking on a Budget</h1>
+    <p>Many of us have dream vacations that we want to save money for, or are already planning for. However, the task of planning a trip in itself can be quite the Herculean feat. Specifically for those in their 20's and 30's who may have never been on a vacation without their parents. This site helps navigate the excursion side of these dream vacations. Many can find a hotel or a flight that is affordable for them, but what happens when they arrive at their destination. That is where we step in helping anyone find activites and/or landmarks to explore. With a few clicks any person can visualize their dream vacation with less worry. That is booking on a Budget.</p>
     <div id="root"></div>
+    <h2>Pick a Place to Visit</h2>
+    <div class="scrollable-list" id="destinationList">
+        <div class="destination" onclick="selectDestination('Los Angeles')">Los Angeles</div>
+        <img src="https://images.app.goo.gl/xcwBiF2kHXd35gCJA" alt="Runyon Canyon hiking trail." />
+        <img src="https://images.app.goo.gl/JUiwTnHRfTfeixNh8" alt="Venice Beach portraying the waves hitting the white sand with palm trees." />
+        <img src="https://images.app.goo.gl/sgubta5cpY3zoPwx8" alt="In N Out restaurant a cheap burger place only located on the west coast." />
+        Los Angeles
+        <div class="destination" onclick="selectDestination('New York City')">New York City</div>
+        <img src="https://images.app.goo.gl/K7JZjWbGbydBxQFW7" alt="this is a picture with different cultures foods portrayed with text reading 9 Best Cheap Eats in Midtown, NYC with the website link to undiscoveredredpathhome.com" />
+        <img src="https://images.app.goo.gl/NaBnEnmFkRrutMSw7 alt='the picture here shows central pasrk with a river flowing through it and skyscrapers in the background. Also people walking and using the paths in th park" />
+        <img src="'https://images.app.goo.gl/8KCneaHKF389Wfe27" alt="The famous dinosaur in the middle of the entrance of the American museum of National History located in Central Park in NYC" />
+        New York City
+        <div class="destination" onclick="selectDestination('Myrtle Beach')">Myrtle Beach</div>
+        <img src="https://images.app.goo.gl/UUgEuKMh1Fv5tTWV6" alt="myrtle beaches white sand and blue water with palm trees and ports surrounding it" />
+        <img src="https://images.app.goo.gl/QUSqgAUsRJxyyw3G9" alt="Family kingdom is displayed. This is a popular amusement park located in Myrtle Beach with rides, carousels, and more for amusement" />
+        <img src="https://images.app.goo.gl/kXmVkwfWMPd5Qxwd9" alt="the picture shows a table of food on the beach in Myrtle Beach. The text on the image reads '8 Myrtle Beach Boarwalk restaurants you need to try!' illustrating one of the highlights of Myrtle Beach" />'
+        Myrtle Beach
+        <div class="destination" onclick="selectDestination('Orlando')">Orlando</div>
+        <img src="https://images.app.goo.gl/ruf1zAizxHc8meBb7" alt="The world famous castle located in Disney World, with Walt Disney, Mickey Mouse and Minnie Mouse in statue form"  />
+        <img src="https://images.app.goo.gl/RPiTMS9o5sH1Hhku9" alt="this image portrays all the teams that play baseball in Florida for spring training" />
+        <img src="https://images.app.goo.gl/4wuxfwcbXSm17dGa6" alt="Picture shows Guy Fieri, a world famous chef, illustrating the purpose of the website the picture is from, which is celebrity chef restaurants in Orlando" />
+        Orlando
+        <div class="destination" onclick="selectDestination('Chicago')">chicago</div>
+        <img src="https://images.app.goo.gl/LtSoJ9JvG44wm2ndA" alt="picture shows the metal bean in the Chicago city in front of skyscrapers with people walking" />
+        <img src="https://images.app.goo.gl/TzSdeDDfwYJFLZff9" alt="picture shows famous wrigley field where the Chicago Cubs play baseball, it is hallowed as one of the most iconic stadiums in the country" />
+        <img src="https://images.app.goo.gl/XewunEUjF5JLEgZK8" alt="this shows the chicago river surrounded with skylines and skyscrapers. Also riverboats that people can ride on" />
+       Chicago
+        <div class="destination" onclick="selectDestination('Las Vegas')">Las Vegas</div>
+        <img src="https://images.app.goo.gl/qF9vUscHSyH4pz2K7" alt="picture shows a butcher carving meat, to illustrate all of the buffets that surround Las Vegas" />
+        <img src="https://images.app.goo.gl/a7GRhMfHAU3PwMMA6" alt="the rio zipline is a zipline in Las Vegas that takes people from hotel roof to another" />
+        <img src="https://images.app.goo.gl/Q65psfBveSUKGADP7" alt="the famous 'to famous Las vegas Nevada' which welcomes all who travel to Las Vegas, specifically their plethora of casinos" />
+        Las vegas
+        <!-- Add more destinations as needed -->
+    </div>
+  
+    <!-- Buttons to open the modal for each destination -->
+    <button class=""openModal" data-destination="Los Angeles">Los Angeles</button>
+    <button class="openModal" data-destination="New York City">New York City</button>
+    <button class="openModal" data-destination="Myrtle Beach">Myrtle Beach</button>
+    <button class="openModal" data-destination="Orlando">Orlando</button>
+    <button class="openModal" data-destination="Chicago">Chicago</button>
+    <button class="openModal" data-destination="Las Vegas">Las Vegas</button>
+    
+    <!-- The Modal -->
+     <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalDestination"></h2>
+            <p id="modalDescription"></p>
+        </div>
+   
+        <script src="script.js"></script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
