@@ -1,27 +1,39 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import ReactDOM from 'react-dom/client';
+// Bringing in the required imports from 'react-router-dom' to set up application routing behavior
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <h1>Booking on a Budget</h1>
+import './index.css';
 
-    <button class="openModal" data-destination="Los Angeles">Los Angeles</button>
-    <button class="openModal" data-destination="New York City">New York City</button>
-    <button class="openModal" data-destination="Myrtle Beach">Myrtle Beach</button>
-    <button class="openModal" data-destination="Orlando">Orlando</button>
-    <button class="openModal" data-destination="Chicago">Chicago</button>
-    <button class="openModal" data-destination="Las Vegas">Las Vegas</button>
+// Bringing in the pages the router will use to conditionally show the appropriate views
+import App from './App';
+import ErrorPage from './pages/ErrorPage';
+import LosAngelesMainPage from './pages/LosAngeles';
+// import HomePage from './pages/HomePage';
+// import ProfilePage from './pages/ProfilePage';
+// import AboutPage from './pages/AboutPage';
 
-    <p>Many of us have dream vacations that we want to save money for, or are already planning for. 
-      However, the task of planning a trip in itself can be quite the Herculean feat. Specifically 
-      for those in their 20's and 30's who may have never been on a vacation without their parents. 
-      This site helps navigate the excursion side of these dream vacations. Many can find a hotel or 
-      a flight that is affordable for them, but what happens when they arrive at their destination. 
-      That is where we step in helping anyone find activites and/or landmarks to explore. With a few 
-      clicks any person can visualize their dream vacation with less worry. That is booking on a Budget.</p>
+// Define the accessible routes, and which components respond to which URL
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+       index: true,
+       element: <HomePage />,
+      },
+      {
+        path: 'LosAngelesMainPage',
+        element: < LosAngelesMainPage />,
+      },
+    ],
+  },
+]);
 
-    <App />
-  </StrictMode>,
-)
+// Render the RouterProvider component
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <RouterProvider router={router} />
+);
+
+
