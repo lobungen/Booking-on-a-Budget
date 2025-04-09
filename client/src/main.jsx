@@ -12,10 +12,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
 // Bringing in the pages the router will use to conditionally show the appropriate views
-import App from './app.jsx';
+import App from './App.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import LosAngelesMainPage from './pages/LosAngeles.jsx';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/Homepage';
 // import ProfilePage from './pages/ProfilePage';
 // import AboutPage from './pages/AboutPage';
 
