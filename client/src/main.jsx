@@ -12,16 +12,15 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
 // Bringing in the pages the router will use to conditionally show the appropriate views
-import App from './app.jsx';
+import App from './App.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import LosAngelesMainPage from './pages/LosAngeles.jsx';
-import MyrtleBeachMainPage from './pages/Myrtlebeach.jsx';
+import HomePage from './pages/Homepage';
 import NewYorkCityMainPage from './pages/NewYorkCity.jsx';
+import MyrtleBeachMainPage from './pages/MyrtleBeach.jsx';
 import OrlandoMainPage from './pages/Orlando.jsx';
 import ChicagoMainPage from './pages/Chicago.jsx';
 import LasVegasMainPage from './pages/LasVegas.jsx';
-import HomePage from './pages/HomePage';
-import DestinationPage from './DestinationPage';
 // import ProfilePage from './pages/ProfilePage';
 // import AboutPage from './pages/AboutPage';
 
@@ -41,29 +40,24 @@ const router = createBrowserRouter([
         element: < LosAngelesMainPage />,
       },
       {
-        path: 'MyrtleBeachMainPage',
-        element: < MyrtleBeachMainPage />,
+        path: 'NewYorkCityMainPage',
+        element: <NewYorkCityMainPage />,
       },
       {
-        path: 'NewYorkCityMainPage',
-        element: < NewYorkCityMainPage />,
+        path: 'MyrtleBeachMainPage',
+        element: <MyrtleBeachMainPage />,
       },
       {
         path: 'OrlandoMainPage',
-        element: < OrlandoMainPage />,
+        element: <OrlandoMainPage />,
       },
       {
         path: 'ChicagoMainPage',
-        element: < ChicagoMainPage />,
+        element: <ChicagoMainPage />,
       },
       {
         path: 'LasVegasMainPage',
-        element: < LasVegasMainPage />,
-      },
-      {
-        path: 'DestinationPage',
-        element: < DestinationPage />,
-      },
+        element: <LasVegasMainPage />,
     ],
   },
 ]);
@@ -72,5 +66,3 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 );
-
-
