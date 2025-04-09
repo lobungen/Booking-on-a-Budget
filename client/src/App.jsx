@@ -5,14 +5,16 @@ import { useState } from "react";
 import "./App.css";
 //import DestinationPage from './DestinationPage'; // Import the DestinationPage component
 import { Outlet } from "react-router-dom";
-import Carousel from "react-bootstrap/Carousel";
-import CarouselImage from "./CarouselImage.jsx";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 function App() {
   const [count, setCount] = useState(0); // Add state for count
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDestination, setSelectedDestination] = useState(null);
-
 
   const destinations = [
     {
@@ -47,12 +49,29 @@ function App() {
     },
   ];
 
-  
-
   return (
     <div>
-        <h1>Booking on a Budget</h1>
-
+      <h1>Booking on a Budget</h1>
+      <Navbar expand="lg" className="bg-body-tertiary">
+        <Container>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="./">Home</Nav.Link>/
+              <Nav.Link href="./src/pages/UnderConstruction.jsx">Contact us</Nav.Link>/
+              <Nav.Link href="./src/pages/UnderConstruction.jsx">My Plans</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <Form className="d-flex">
+        <Form.Control
+          type="search"
+          placeholder="Search for a destination"
+          className="me-2"
+          aria-label="Search"
+        />
+        <Button variant="outline-success">Search</Button>
+      </Form>
       <Outlet />
     </div>
   );
