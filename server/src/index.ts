@@ -3,7 +3,7 @@ import sequelize from './models/db';
 import './models/User';
 import './models/Excursion';
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 
 sequelize.sync({ alter: true })
   .then(() => {
