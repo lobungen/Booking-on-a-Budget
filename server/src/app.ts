@@ -4,6 +4,8 @@ import dotenv from 'dotenv';
 
 import authRoutes from './routes/authRoutes'; 
 import excursionRoutes from './routes/excursionRoutes';
+import amadeusRoutes from './routes/amadeusRoutes';
+
 
 dotenv.config();
 
@@ -14,12 +16,12 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json()); // Parse JSON request bodies
+app.use('/api/amadeus', amadeusRoutes);
 
-
-app.post('/api/test', (req, res) => {
-  console.log('Test route hit');
-  res.json({ message: 'It works!' });
-});
+// app.post('/api/test', (req, res) => {
+//   console.log('Test route hit');
+//   res.json({ message: 'It works!' });
+// });
 
 // Routes
 app.use('/api/auth', authRoutes);
