@@ -1,73 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 //import { BrowserRouter as Router, Route, Switch, Link, Routes } from 'react-router-dom'
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
-import axios from "axios";
-import { AiOutlineLeftCircle, AiOutlineRightCircle } from "react-icons/ai";
 import "./App.css";
 //import DestinationPage from './DestinationPage'; // Import the DestinationPage component
 import { Outlet } from "react-router-dom";
+// import Carousel from "react-bootstrap/Carousel";
+// import ExampleCarouselImage from "./ExampleCarouselImage";
 
 function App() {
   const [count, setCount] = useState(0); // Add state for count
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDestination, setSelectedDestination] = useState(null);
 
-  const apiEnpoint = "https://picsum.photos/350/250";
-
-  const [data, setData] = useState([]);
-  const IMAGECOUNT = 5;
-
-  useEffect(() => {
-    getImages();
-  }, []);
-
-  const getImages = async () => {
-    const newData = [];
-    for (let index = 0; index < IMAGECOUNT; index++) {
-      const randomNumber = Math.floor(Math.random() * 20) * index;
-      const imageEndPoint = `https://picsum.photos/id/${randomNumber}/350/250`;
-
-      const response = await axios.get(imageEndPoint);
-      const responseURL = response.request.responseURL;
-
-      const image = { id: index, url: responseURL };
-      newData.push(image);
-    }
-
-    setData(newData);
-  };
-
-  const handlePreviousOnClick = () => {
-    setCurrentIdx((index) => {
-      if (index > 0) {
-        return index - 1;
-      } else {
-        return index;
-      }
-    });
-  };
-
-  const handleNextOnClick = () => {
-    setCurrentIdx((index) => {
-      if (index < IMAGECOUNT - 1) {
-        return index + 1;
-      } else {
-        return index;
-      }
-    });
-  };
-  const handleOnClick = (direction) => {
-    setCurrentIdx((index) => {
-      let newIdx;
-      if (direction === "previous") {
-        newIdx = index > 0 ? index - 1 : index;
-      } else if (direction === "next") {
-        newIdx = index < IMAGECOUNT - 1 ? index + 1 : index;
-      }
-      return newIdx;
-    });
-  };
 
   const destinations = [
     {
@@ -102,28 +47,38 @@ function App() {
     },
   ];
 
+  
+
   return (
     <div>
-      <div className="greetings-container">
         <h1>Booking on a Budget</h1>
-      </div>
-      <div className="main-container">
-        <div className="previous-btn-container">
-          <AiOutlineLeftCircle
-            className="navigation-btn"
-            onClick={() => handleOnClick("previous")}
-          />
-        </div>
-        <div className="main-image-container">
-          <img src={apiEnpoint} alt="" />
-        </div>
-        <div className="next-btn-container">
-          <AiOutlineRightCircle
-            className="navigation-btn"
-            onClick={() => handleOnClick("next")}
-          />
-        </div>
-      </div>
+{/* 
+        <Carousel>
+      <Carousel.Item>
+        <ExampleCarouselImage text="First slide" />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <ExampleCarouselImage text="Second slide" />
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <ExampleCarouselImage text="Third slide" />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel> */}
+
       <Outlet />
     </div>
   );

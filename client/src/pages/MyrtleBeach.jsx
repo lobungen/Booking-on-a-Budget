@@ -13,4 +13,6 @@ function MyrtleBeachMainPage() {
             </>
         );
     }
+
 export default MyrtleBeachMainPage;
+

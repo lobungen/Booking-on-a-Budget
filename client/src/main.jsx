@@ -58,7 +58,6 @@ const router = createBrowserRouter([
       {
         path: 'LasVegasMainPage',
         element: <LasVegasMainPage />,
-      },
     ],
   },
 ]);
@@ -67,5 +66,3 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 );
-
-
