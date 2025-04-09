@@ -5,7 +5,6 @@ import jwt from 'jsonwebtoken';
 import { User } from '../models/User';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'dev_secret';
-console.log('JWT_SECRET:', JWT_SECRET);
 
 export const register: RequestHandler = async (req, res) => {
   try {
