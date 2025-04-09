@@ -41,3 +41,57 @@
 .read-the-docs {
   color: #888;
 }
+
+.greetings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+
+.previous-btn-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+.next-btn-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+.main-image-container {
+  width: 350px;
+  height: 250px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+}
+
+.navigation-btn {
+  width: 80px;
+  height: 80px;
+  color: limegreen;
+}
