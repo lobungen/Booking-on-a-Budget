@@ -21,49 +21,11 @@ const [selectedDestination, setSelectedDestination] = useState(null);
     ];
 
   return (
+
     <div>
     <h1> Booking on a Budget </h1>
     < Outlet />
     </div>
-    // <Router>
-    // <h1>Destination Picker</h1>
-    // <h2>Pick a Place to Visit</h2>
-    // <div className="scrollable-list">
-    //   {destinations.map((destination, index) => (
-    //     <Link to={`/destination/${index}`} key={index} className="destination">
-    //       {destination.name}
-    //     </Link>
-    //   ))}
-    // </div>
-
-    // {/*} React Router v6 uses Routes instead of Switch */}  
-    //   <Routes>
-    //     {destinations.map((destination, index) => (
-    //       <Route
-    //         key={index}
-    //         path={`/destination/${index}`}
-    //         element={<DestinationPage destination={destination} />}
-    //         />
-    //     ))}
-    //   </Routes>
-
-    //   <div className="card">
-    //       <button onClick={() => setCount(count + 1)}>
-    //         count is {count}
-    //       </button>
-    //       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    //     </div>
-
-    //     {/*Uncomment to show the Vite and React logos */}
-    //     <div>
-    //       <a href="https://vite.dev" target="_blank">
-    //         <img src={viteLogo} className="logo" alt="Vite logo" />
-    //       </a>
-    //       <a href="https://react.dev" target="_blank">
-    //         <img src={reactLogo} className="logo react" alt="React logo" />
-    //       </a>
-    //     </div>
-    // </Router>
   );
 }
 
