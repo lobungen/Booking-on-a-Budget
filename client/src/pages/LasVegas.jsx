@@ -13,4 +13,6 @@ function LasVegasMainPage() {
         </>
     );
 }
+
+export default LasVegasMainPage;
     
