@@ -14,3 +14,5 @@ return (
         </>
 );
 }
+
+export default NewYorkCityMainPage;

@@ -14,3 +14,5 @@ function ChicagoMainPage() {
         </>
     );
 }
+
+export default ChicagoMainPage;

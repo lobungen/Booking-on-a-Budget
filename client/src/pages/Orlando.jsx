@@ -13,3 +13,5 @@ function OrlandoMainPage() {
         </>
     );
 }
+
+export default OrlandoMainPage;

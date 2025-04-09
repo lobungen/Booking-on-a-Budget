@@ -15,7 +15,13 @@ import './index.css';
 import App from './app.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import LosAngelesMainPage from './pages/LosAngeles.jsx';
+import MyrtleBeachMainPage from './pages/Myrtlebeach.jsx';
+import NewYorkCityMainPage from './pages/NewYorkCity.jsx';
+import OrlandoMainPage from './pages/Orlando.jsx';
+import ChicagoMainPage from './pages/Chicago.jsx';
+import LasVegasMainPage from './pages/LasVegas.jsx';
 import HomePage from './pages/HomePage';
+import DestinationPage from './DestinationPage';
 // import ProfilePage from './pages/ProfilePage';
 // import AboutPage from './pages/AboutPage';
 
@@ -33,6 +39,30 @@ const router = createBrowserRouter([
       {
         path: 'LosAngelesMainPage',
         element: < LosAngelesMainPage />,
+      },
+      {
+        path: 'MyrtleBeachMainPage',
+        element: < MyrtleBeachMainPage />,
+      },
+      {
+        path: 'NewYorkCityMainPage',
+        element: < NewYorkCityMainPage />,
+      },
+      {
+        path: 'OrlandoMainPage',
+        element: < OrlandoMainPage />,
+      },
+      {
+        path: 'ChicagoMainPage',
+        element: < ChicagoMainPage />,
+      },
+      {
+        path: 'LasVegasMainPage',
+        element: < LasVegasMainPage />,
+      },
+      {
+        path: 'DestinationPage',
+        element: < DestinationPage />,
       },
     ],
   },
