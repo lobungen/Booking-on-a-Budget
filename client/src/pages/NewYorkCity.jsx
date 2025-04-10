@@ -33,14 +33,15 @@ function NewYorkCityMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
       <Card>
-        <Card.Header as="h3">Statue of Liberty</Card.Header>
+        <Card.Header as="h3">Statue of Liberty Helicopter Tour</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
-            <p>1 hour</p>
-            <p>from $25</p>
+            <p>20 minutes</p>
+            <p>from $279</p>
           </Card.Text>
         </Card.Body>
         <img
@@ -50,14 +51,15 @@ function NewYorkCityMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
       <Card>
-        <Card.Header as="h3">Time Square</Card.Header>
+        <Card.Header as="h3">Private Time Square Walking Tour</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
             <p>1 hour</p>
-            <p>from $25</p>
+            <p>from $12</p>
           </Card.Text>
         </Card.Body>
         <img
@@ -67,6 +69,7 @@ function NewYorkCityMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
     </div>
   );

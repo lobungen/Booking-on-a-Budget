@@ -8,17 +8,17 @@ function LosAngelesMainPage() {
         <h2>All Los Angeles Tours & Excursions in 2025</h2>
       </div>
       <p>
-        "One of the biggest cities in the United States-spanning from the
+        One of the biggest cities in the United States-spanning from the
         beaches to the amazing trails Los Angeles has a plethora of amazing
-        places to visit on a budget."
+        places to visit on a budget.
       </p>
       <Card>
-        <Card.Header as="h3">Runyon Canyon</Card.Header>
+        <Card.Header as="h3">Runyon Canyon Hiking Tour</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
-            <p>1 hour</p>
-            <p>from $25</p>
+            <p>2 hour</p>
+            <p>from $149</p>
           </Card.Text>
         </Card.Body>
         <img
@@ -28,14 +28,15 @@ function LosAngelesMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
       <Card>
-        <Card.Header as="h3">Venice Beach</Card.Header>
+        <Card.Header as="h3">Venice Beach Bike Tour</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
-            <p>1 hour</p>
-            <p>from $25</p>
+            <p>3 hour</p>
+            <p>from $89</p>
           </Card.Text>
         </Card.Body>
         <img
@@ -45,23 +46,25 @@ function LosAngelesMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
       <Card>
-        <Card.Header as="h3">Restaurants</Card.Header>
+        <Card.Header as="h3">Warner Bros Studio Tour</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
-            <p>1 hour</p>
-            <p>from $25</p>
+            <p>3 hour</p>
+            <p>from $73</p>
           </Card.Text>
         </Card.Body>
         <img
-          src="src/assets/in-N-out.jpg"
-          alt="In N Out restaurant a cheap burger place only located on the west coast."
+          src="src/assets/WarnerBrosTour.jpg"
+          alt="Warner Bros Studio Tour."
           style={{ width: "500px", height: "300px" }}
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
     </div>
   );

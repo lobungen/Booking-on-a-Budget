@@ -17,55 +17,58 @@ function LasVegasMainPage() {
           city, Las Vegas is a destination that offers excitement and adventure!
         </p>
         <Card>
-          <Card.Header as="h3">Las Vegas Skyline</Card.Header>
+          <Card.Header as="h3">Grand Canyon Tour with Lunch</Card.Header>
           <Card.Body>
             <Card.Text>
               <p>Free Cancellation</p>
               <p>1 hour</p>
-              <p>from $25</p>
+              <p>from $89</p>
             </Card.Text>
           </Card.Body>
           <img
-            src="src/assets/las-vegas.jpg"
+            src="src/assets/GrandCanyon.jpg"
             alt="Las Vegas skyline"
             style={{ width: "500px", height: "300px" }}
           />
           <p></p>
           <Button variant="primary">Check Availabilty</Button>
+          <Button variant="secondary">Add to Plan</Button>
         </Card>
         <Card>
-          <Card.Header as="h3">Casino</Card.Header>
+          <Card.Header as="h3">Las Vegas Hellicopter Night Flight</Card.Header>
           <Card.Body>
             <Card.Text>
               <p>Free Cancellation</p>
               <p>1 hour</p>
-              <p>from $25</p>
+              <p>from $99</p>
             </Card.Text>
           </Card.Body>
           <img
-            src="src/assets/casino.jpg"
+            src="src/assets/LasvegasHellicopterTour.jpg"
             alt="Casino."
             style={{ width: "500px", height: "300px" }}
           />
           <p></p>
           <Button variant="primary">Check Availabilty</Button>
+          <Button variant="secondary">Add to Plan</Button>
         </Card>
         <Card>
-          <Card.Header as="h3">Entertainment</Card.Header>
+          <Card.Header as="h3">Emerald Cave Kayak Tour</Card.Header>
           <Card.Body>
             <Card.Text>
               <p>Free Cancellation</p>
-              <p>1 hour</p>
-              <p>from $25</p>
+              <p>6 hour</p>
+              <p>from $109</p>
             </Card.Text>
           </Card.Body>
           <img
-            src="src/assets/entertainment.jpg"
+            src="src/assets/EmarladCaveKayak.jpg"
             alt="Entertainment."
             style={{ width: "500px", height: "300px" }}
           />
           <p></p>
           <Button variant="primary">Check Availabilty</Button>
+          <Button variant="secondary">Add to Plan</Button>
         </Card>
       </div>
     </div>

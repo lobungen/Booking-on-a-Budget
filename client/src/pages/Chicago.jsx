@@ -14,12 +14,12 @@ function ChicagoMainPage() {
         river, Chicago is a one-of-a-kind place that can be perfect for anyone.
       </p>
       <Card>
-        <Card.Header as="h3">Chicago Skyline</Card.Header>
+        <Card.Header as="h3">Chicago Architecture River Cruise</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
             <p>1 hour</p>
-            <p>from $25</p>
+            <p>from $49</p>
           </Card.Text>
         </Card.Body>
         <img
@@ -29,14 +29,15 @@ function ChicagoMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
       <Card>
-        <Card.Header as="h3">Deep Dish Pizza</Card.Header>
+        <Card.Header as="h3">Chicago Ultimate Food Tour</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
-            <p>1 hour</p>
-            <p>from $25</p>
+            <p>3 hour</p>
+            <p>from $85</p>
           </Card.Text>
         </Card.Body>
         <img
@@ -46,13 +47,14 @@ function ChicagoMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
       <Card>
-        <Card.Header as="h3">Chicago Games</Card.Header>
+        <Card.Header as="h3">Chicago Cubs Baseball Games</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
-            <p>1 hour</p>
+            <p>3 hour</p>
             <p>from $25</p>
           </Card.Text>
         </Card.Body>
@@ -63,6 +65,7 @@ function ChicagoMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
     </div>
   );
