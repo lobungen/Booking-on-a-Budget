@@ -35,6 +35,8 @@ server/
 ├── tsconfig.json
 
 
+## ERD
+<img width="1028" alt="image" src="https://github.com/user-attachments/assets/9dc3f4e3-93c6-433a-a81c-bc73d947f590" />
 
 
 ## 🛠 Setup Instructions
