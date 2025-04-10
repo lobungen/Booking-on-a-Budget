@@ -9,6 +9,11 @@ A full-stack travel excursion planner that helps users discover, save, and gener
 - External APIs: Amadeus, Viator
 - Deployment: Render
 
+  ## External API used(4 used):
+  - Amadeus & GEOAPIFY: Cities Information
+  - Unsplash: images
+  - Google: Embed Map
+
 ## 📸 Screenshot
 ![screenshot](./tobeadded.png)
 
