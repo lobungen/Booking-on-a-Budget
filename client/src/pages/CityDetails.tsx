@@ -26,11 +26,13 @@ const mockSpotBudget = () => {
   return `$${min}–${max}`;
 };
 
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const CityDetails = () => {
-  const [city, setCity] = useState(() => localStorage.getItem('selectedCity') || '');
-  const [image, setImage] = useState(() => localStorage.getItem('selectedCityImage') || '');
-  const [lat, setLat] = useState(() => localStorage.getItem('selectedCityLat'));
-  const [lng, setLng] = useState(() => localStorage.getItem('selectedCityLng'));
+  const [city] = useState(() => localStorage.getItem('selectedCity') || '');
+  const [image] = useState(() => localStorage.getItem('selectedCityImage') || '');
+  const [lat] = useState(() => localStorage.getItem('selectedCityLat'));
+  const [lng] = useState(() => localStorage.getItem('selectedCityLng'));
   const [spots, setSpots] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState('tourism.sights');
