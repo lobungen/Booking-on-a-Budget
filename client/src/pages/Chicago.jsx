@@ -13,6 +13,7 @@ function ChicagoMainPage() {
         chicago dog restaraunts, and beautiful architecture and sights along the
         river, Chicago is a one-of-a-kind place that can be perfect for anyone.
       </p>
+
       <Card>
         <Card.Header as="h3">Chicago Architecture River Cruise</Card.Header>
         <Card.Body>

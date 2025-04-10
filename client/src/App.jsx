@@ -1,10 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 //import { BrowserRouter as Router, Route, Switch, Link, Routes } from 'react-router-dom'
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
 import "./App.css";
 //import DestinationPage from './DestinationPage'; // Import the DestinationPage component
-import { Outlet } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -15,6 +15,19 @@ function App() {
   const [count, setCount] = useState(0); // Add state for count
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDestination, setSelectedDestination] = useState(null);
+
+  const [query, setQuery] = useState("");
+
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(`https://api.example.com/search?q=${query}`);
+      const data = await response.json();
+      console.log("API results:", data);
+    } catch (error) {
+      console.error("Search failed:", error);
+    }
+  };
 
   const destinations = [
     {
@@ -61,12 +74,14 @@ function App() {
                     <h3>Booking on a Budget</h3>
                   </p>
                 </div>
-                <Form className="d-flex">
+                <Form className="d-flex" onSubmit={handleSearch}>
                   <Form.Control
                     type="search"
                     placeholder="Search for a destination"
                     className="me-2 search-input"
                     aria-label="Search"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
                   />
                   <Button variant="outline-success">Search</Button>
                 </Form>

@@ -22,6 +22,7 @@ import MyrtleBeachMainPage from "./pages/MyrtleBeach.jsx";
 import OrlandoMainPage from "./pages/Orlando.jsx";
 import ChicagoMainPage from "./pages/Chicago.jsx";
 import LasVegasMainPage from "./pages/LasVegas.jsx";
+import Contact from "./pages/Contact.jsx";
 
 // import ProfilePage from './pages/ProfilePage';
 // import AboutPage from './pages/AboutPage';
@@ -61,11 +62,17 @@ const router = createBrowserRouter([
         path: "LasVegasMainPage",
         element: <LasVegasMainPage />,
       },
+      {
+        path: 'contact',
+        element: <Contact />,
+      },
     ],
   },
 ]);
 
 // Render the RouterProvider component
 ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
   <RouterProvider router={router} />
+  </React.StrictMode>
 );
