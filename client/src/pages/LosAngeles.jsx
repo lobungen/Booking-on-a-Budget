@@ -5,12 +5,12 @@ function LosAngelesMainPage() {
   return (
     <div class="scrollable-list" id="destinationList">
       <div class="destination" onClick="selectDestination('Los Angeles')">
-        <h2>All Los Angeles Tours & Excursions in 2025</h2>
+        <h1>All Los Angeles Tours & Excursions in 2025</h1>
       </div>
       <p>
-        One of the biggest cities in the United States-spanning from the
-        beaches to the amazing trails Los Angeles has a plethora of amazing
-        places to visit on a budget.
+        One of the biggest cities in the United States-spanning from the beaches
+        to the amazing trails Los Angeles has a plethora of amazing places to
+        visit on a budget.
       </p>
       <Card>
         <Card.Header as="h3">Runyon Canyon Hiking Tour</Card.Header>

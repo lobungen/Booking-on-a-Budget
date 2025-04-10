@@ -5,7 +5,7 @@ function ChicagoMainPage() {
   return (
     <div class="scrollable-list" id="destinationList">
       <div class="destination" onClick="selectDestination('Chicago')">
-        <h2>All Chicago Tours & Excursions in 2025</h2>
+        <h1>All Chicago Tours & Excursions in 2025</h1>
       </div>
       <p>
         The windy city is one of the most popular midwest tourist destinations.

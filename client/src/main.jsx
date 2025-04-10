@@ -1,5 +1,5 @@
-import ReactDOM from 'react-dom/client';
-import React from 'react';
+import ReactDOM from "react-dom/client";
+import React from "react";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>
@@ -8,20 +8,20 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 
 // Bringing in the required imports from 'react-router-dom' to set up application routing behavior
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import './index.css';
+import "./index.css";
 
 // Bringing in the pages the router will use to conditionally show the appropriate views
-import App from './app.jsx';
-import ErrorPage from './pages/ErrorPage.jsx';
-import LosAngelesMainPage from './pages/LosAngeles.jsx';
-import HomePage from './pages/HomePage';
-import NewYorkCityMainPage from './pages/NewYorkCity.jsx';
-import MyrtleBeachMainPage from './pages/MyrtleBeach.jsx';
-import OrlandoMainPage from './pages/Orlando.jsx';
-import ChicagoMainPage from './pages/Chicago.jsx';
-import LasVegasMainPage from './pages/LasVegas.jsx';
+import App from "./app.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
+import LosAngelesMainPage from "./pages/LosAngeles.jsx";
+import HomePage from "./pages/HomePage";
+import NewYorkCityMainPage from "./pages/NewYorkCity.jsx";
+import MyrtleBeachMainPage from "./pages/MyrtleBeach.jsx";
+import OrlandoMainPage from "./pages/Orlando.jsx";
+import ChicagoMainPage from "./pages/Chicago.jsx";
+import LasVegasMainPage from "./pages/LasVegas.jsx";
 
 // import ProfilePage from './pages/ProfilePage';
 // import AboutPage from './pages/AboutPage';
@@ -29,44 +29,43 @@ import LasVegasMainPage from './pages/LasVegas.jsx';
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-       index: true,
-       element: <HomePage />,
+        index: true,
+        element: <HomePage />,
       },
       {
-        path: 'LosAngelesMainPage',
-        element: < LosAngelesMainPage />,
+        path: "LosAngelesMainPage",
+        element: <LosAngelesMainPage />,
       },
       {
-        path: 'NewYorkCityMainPage',
+        path: "NewYorkCityMainPage",
         element: <NewYorkCityMainPage />,
       },
       {
-        path: 'MyrtleBeachMainPage',
+        path: "MyrtleBeachMainPage",
         element: <MyrtleBeachMainPage />,
       },
       {
-        path: 'OrlandoMainPage',
+        path: "OrlandoMainPage",
         element: <OrlandoMainPage />,
       },
       {
-        path: 'ChicagoMainPage',
+        path: "ChicagoMainPage",
         element: <ChicagoMainPage />,
       },
       {
-        path: 'LasVegasMainPage',
+        path: "LasVegasMainPage",
         element: <LasVegasMainPage />,
       },
-
     ],
   },
 ]);
 
 // Render the RouterProvider component
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );

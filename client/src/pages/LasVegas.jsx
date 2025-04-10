@@ -6,7 +6,7 @@ function LasVegasMainPage() {
     <div>
       <div class="scrollable-list" id="destinationList">
         <div class="destination" onClick="selectDestination('Las Vegas')">
-          <h2>All Las Vegas Tours & Excursions in 2025</h2>
+          <h1>All Las Vegas Tours & Excursions in 2025</h1>
         </div>
         <p>
           Las Vegas, known for its vibrant nightlife, casinos, and

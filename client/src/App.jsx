@@ -51,27 +51,46 @@ function App() {
 
   return (
     <div>
-      <h1>Booking on a Budget</h1>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="./">Home</Nav.Link>/
-              <Nav.Link href="./src/pages/UnderConstruction.html">Plans</Nav.Link>/
-              <Nav.Link href="./src/pages/UnderConstruction.html">Contact Us</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-      <Form className="d-flex">
-        <Form.Control
-          type="search"
-          placeholder="Search for a destination"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-success">Search</Button>
-      </Form>
+      <div class="header-container">
+        <Navbar expand="lg" className="bg-body-tertiary">
+          <Container>
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <div className="logo">
+                  <p>
+                    <h3>Booking on a Budget</h3>
+                  </p>
+                </div>
+                <Form className="d-flex">
+                  <Form.Control
+                    type="search"
+                    placeholder="Search for a destination"
+                    className="me-2 search-input"
+                    aria-label="Search"
+                  />
+                  <Button variant="outline-success">Search</Button>
+                </Form>
+                <div className="nav-links">
+                  <Nav.Link href="./">
+                    <i className="bi bi-house-door"></i> {/* Home Icon */}Home
+                  </Nav.Link>
+                  /
+                  <Nav.Link href="./src/pages/UnderConstruction.html">
+                    <i className="bi bi-calendar"></i>{" "}
+                    {/* Calendar Icon for Plans */}Plans
+                  </Nav.Link>
+                  /
+                  <Nav.Link href="./src/pages/UnderConstruction.html">
+                    <i className="bi bi-person-circle"></i>{" "}
+                    {/* Profile Icon with Circle */}
+                    Profile
+                  </Nav.Link>
+                </div>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </div>
       <Outlet />
     </div>
   );

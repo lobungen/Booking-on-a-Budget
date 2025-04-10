@@ -5,7 +5,7 @@ function NewYorkCityMainPage() {
   return (
     <div class="scrollable-list" id="destinationList">
       <div class="destination" onClick="selectDestination('New York City')">
-        <h2>All New York City Tours & Excursions in 2025</h2>
+        <h1>All New York City Tours & Excursions in 2025</h1>
       </div>
       <p>
         The city that never sleeps, New York City is a bustling metropolis with
