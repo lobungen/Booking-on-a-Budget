@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: booking-backend
+    runtime: node
+    repo: https://github.com/hoekming/booking-on-a-budget
+    branch: main
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+
+  - type: web
+    name: booking-frontend
+    repo: https://github.com/hoekming/booking-on-a-budget
+    branch: main
+    rootDir: client
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    autoDeploy: true
