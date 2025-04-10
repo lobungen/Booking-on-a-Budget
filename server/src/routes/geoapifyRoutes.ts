@@ -6,11 +6,7 @@ const router = express.Router();
 const GEOAPIFY_KEY = process.env.GEOAPIFY_KEY;
 
 router.get('/pois', async (req: Request, res: Response) => {
-  const { lat, lng, category = 'tourism.sights' } = req.query as {
-    lat?: string;
-    lng?: string;
-    category?: string;
-  };
+  const { lat, lng, category = 'tourism.sights' } = req.query;
 
   if (!lat || !lng) {
     return res.status(400).json({ message: 'Latitude and longitude are required' });
@@ -34,3 +30,4 @@ router.get('/pois', async (req: Request, res: Response) => {
 });
 
 export default router;
+
