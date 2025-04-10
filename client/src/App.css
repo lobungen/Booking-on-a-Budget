@@ -34,7 +34,7 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 1em;
 }
 
 .card:hover {
@@ -97,4 +97,23 @@
   width: 80px;
   height: 80px;
   color: limegreen;
+  margin: 10px;
+}
+
+.me-auto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 10px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.d-flex:hover {
+  border-color: limegreen;
 }

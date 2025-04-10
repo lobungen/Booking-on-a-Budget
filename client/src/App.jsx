@@ -57,8 +57,8 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="./">Home</Nav.Link>/
-              <Nav.Link href="./src/pages/UnderConstruction.jsx">Contact us</Nav.Link>/
-              <Nav.Link href="./src/pages/UnderConstruction.jsx">My Plans</Nav.Link>
+              <Nav.Link href="./src/pages/UnderConstruction.html">Plans</Nav.Link>/
+              <Nav.Link href="./src/pages/UnderConstruction.html">Contact Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

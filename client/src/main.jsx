@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+import React from 'react';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>
@@ -21,7 +22,7 @@ import MyrtleBeachMainPage from './pages/MyrtleBeach.jsx';
 import OrlandoMainPage from './pages/Orlando.jsx';
 import ChicagoMainPage from './pages/Chicago.jsx';
 import LasVegasMainPage from './pages/LasVegas.jsx';
-import UnderConstruction from './pages/UnderConstruction.jsx';
+
 // import ProfilePage from './pages/ProfilePage';
 // import AboutPage from './pages/AboutPage';
 
@@ -60,10 +61,7 @@ const router = createBrowserRouter([
         path: 'LasVegasMainPage',
         element: <LasVegasMainPage />,
       },
-      {
-        path: 'UnderConstruction',
-        element: <UnderConstruction />,
-      },
+
     ],
   },
 ]);

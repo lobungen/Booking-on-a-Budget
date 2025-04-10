@@ -18,12 +18,12 @@ function MyrtleBeachMainPage() {
         something for everyone.
       </p>
       <Card>
-        <Card.Header as="h3">Myrtle Beach</Card.Header>
+        <Card.Header as="h3">Surf Lessons in Myrtle Beach</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
-            <p>1 hour</p>
-            <p>from $25</p>
+            <p>2 hour</p>
+            <p>from $65</p>
           </Card.Text>
         </Card.Body>
         <img
@@ -33,14 +33,15 @@ function MyrtleBeachMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
       <Card>
-        <Card.Header as="h3">Golf Courses</Card.Header>
+        <Card.Header as="h3">Providenciales Grace Bay Golf Cart Tour </Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
             <p>1 hour</p>
-            <p>from $25</p>
+            <p>from $155</p>
           </Card.Text>
         </Card.Body>
         <img
@@ -50,9 +51,10 @@ function MyrtleBeachMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
       <Card>
-        <Card.Header as="h3">Family Attractions</Card.Header>
+        <Card.Header as="h3">Polynesian Fire Luau and Dinner in Myrtle Beach</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
@@ -61,12 +63,13 @@ function MyrtleBeachMainPage() {
           </Card.Text>
         </Card.Body>
         <img
-          src="src/assets/family-friendly.jpg"
+          src="src/assets/fireLuau.jpg"
           alt="Family friendly attractions."
           style={{ width: "500px", height: "300px" }}
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
     </div>
   );

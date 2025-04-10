@@ -17,12 +17,12 @@ function OrlandoMainPage() {
         seeking fun and adventure.
       </p>
       <Card>
-        <Card.Header as="h3">Orlando Skyline</Card.Header>
+        <Card.Header as="h3">Private Orlando Helicopter Tour</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
-            <p>1 hour</p>
-            <p>from $25</p>
+            <p>45 minutes to 1 hour</p>
+            <p>from $155</p>
           </Card.Text>
         </Card.Body>
         <img
@@ -32,14 +32,15 @@ function OrlandoMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
       <Card>
         <Card.Header as="h3">Universal Studios</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
-            <p>1 hour</p>
-            <p>from $25</p>
+            <p>11 hour</p>
+            <p>from $58</p>
           </Card.Text>
         </Card.Body>
         <img
@@ -49,14 +50,15 @@ function OrlandoMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
       <Card>
         <Card.Header as="h3">Disney World</Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
-            <p>1 hour</p>
-            <p>from $25</p>
+            <p>11 hour</p>
+            <p>from $58</p>
           </Card.Text>
         </Card.Body>
         <img
@@ -66,6 +68,7 @@ function OrlandoMainPage() {
         />
         <p></p>
         <Button variant="primary">Check Availabilty</Button>
+        <Button variant="secondary">Add to Plan</Button>
       </Card>
     </div>
   );
