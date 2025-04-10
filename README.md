@@ -33,3 +33,21 @@ server/
 │   ├── app.ts
 │   └── index.ts
 ├── tsconfig.json
+
+
+
+
+## 🛠 Setup Instructions
+
+### Backend
+```bash
+cd server
+npm install
+cp .env.example .env
+# Edit your DB_URL and keys
+npm run dev
+
+### Frontend
+cd client
+npm install
+npm run dev
