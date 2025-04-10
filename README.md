@@ -13,7 +13,7 @@ A full-stack travel excursion planner that helps users discover, save, and gener
 ![screenshot](./tobeadded.png)
 
 ## 🔗 Live Demo
-[https://your-app.onrender.com]([https://your-app.onrender.com](https://booking-on-a-budget-2.onrender.com/))
+[https://your-app.onrender.com]([https://your-app.onrender.com](https://booking-on-a-budget-2.onrender.com/])
 
 ## Structure
 booking-on-a-budget/
