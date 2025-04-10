@@ -15,6 +15,9 @@ A full-stack travel excursion planner that helps users discover, save, and gener
 ## 🔗 Live Demo
 [https://your-app.onrender.com](https://your-app.onrender.com)
 
+## Figma
+[Link to figma](https://www.figma.com/proto/6Rt5QntZvO9pINuAQq16HX/Booking-on-a-Budget?node-id=0-1&t=0VlMTQnCMWobolHm-1)
+
 ## Structure
 booking-on-a-budget/
 ├── client/             # React front end
