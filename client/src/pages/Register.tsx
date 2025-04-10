@@ -1,72 +1,81 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { register } from '../api/auth';
+import AuthLayout from '../components/AuthLayout';
 
 const Register = () => {
-  const [form, setForm] = useState({ name: '', email: '', password: '' });
-  const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [name, setName] = useState('');
   const navigate = useNavigate();
-
-  const validate = () => {
-    const newErrors: typeof errors = {};
-    if (!form.name.trim()) newErrors.name = 'Name is required';
-    if (!form.email.includes('@')) newErrors.email = 'Invalid email';
-    if (form.password.length < 6) newErrors.password = 'Password must be at least 6 characters';
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!validate()) return;
-
     try {
-      const res = await register(form.name, form.email, form.password);
-      localStorage.setItem('token', res.token);
-      navigate('/');
+      await register(name, email, password);
+      alert('Registration successful! Please log in.');
+      navigate('/login');
     } catch (err) {
       alert('Registration failed');
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4 bg-white shadow rounded mt-6">
-      <h2 className="text-xl mb-4">Register</h2>
-      <input
-        className="border p-2 mb-1 w-full"
-        name="name"
-        placeholder="Name"
-        value={form.name}
-        onChange={handleChange}
-      />
-      {errors.name && <p className="text-red-500 text-sm mb-2">{errors.name}</p>}
+    <AuthLayout>
+      <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-800 shadow-md rounded px-6 py-8">
+        <h2 className="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-gray-100">
+          Register
+        </h2>
 
-      <input
-        className="border p-2 mb-1 w-full"
-        name="email"
-        placeholder="Email"
-        value={form.email}
-        onChange={handleChange}
-      />
-      {errors.email && <p className="text-red-500 text-sm mb-2">{errors.email}</p>}
+        <label htmlFor="name" className="block mb-1 text-gray-700 dark:text-gray-200">
+          Name
+        </label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          autoComplete="name"
+          value={name}
+          onChange={e => setName(e.target.value)}
+          placeholder="Name"
+          className="border p-3 mb-4 w-full rounded dark:bg-gray-700 dark:text-white"
+        />
 
-      <input
-        className="border p-2 mb-1 w-full"
-        type="password"
-        name="password"
-        placeholder="Password"
-        value={form.password}
-        onChange={handleChange}
-      />
-      {errors.password && <p className="text-red-500 text-sm mb-2">{errors.password}</p>}
+        <label htmlFor="email" className="block mb-1 text-gray-700 dark:text-gray-200">
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autoComplete="email"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          placeholder="Email"
+          className="border p-3 mb-4 w-full rounded dark:bg-gray-700 dark:text-white"
+        />
 
-      <button className="bg-green-600 text-white px-4 py-2 mt-2 rounded w-full">Register</button>
-    </form>
+        <label htmlFor="password" className="block mb-1 text-gray-700 dark:text-gray-200">
+          Password
+        </label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          autoComplete="new-password"
+          value={password}
+          onChange={e => setPassword(e.target.value)}
+          placeholder="Password"
+          className="border p-3 mb-4 w-full rounded dark:bg-gray-700 dark:text-white"
+        />
+
+        <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded w-full font-semibold" type="submit">
+          Register
+        </button>
+      </form>
+    </AuthLayout>
   );
 };
 
 export default Register;
+

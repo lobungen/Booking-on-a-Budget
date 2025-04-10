@@ -5,6 +5,8 @@ import dotenv from 'dotenv';
 import authRoutes from './routes/authRoutes'; 
 import excursionRoutes from './routes/excursionRoutes';
 import amadeusRoutes from './routes/amadeusRoutes';
+import geoapifyRoutes from './routes/geoapifyRoutes';
+import bookingRoutes from './routes/bookingRoutes';
 
 
 dotenv.config();
@@ -16,7 +18,7 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json()); // Parse JSON request bodies
-app.use('/api/amadeus', amadeusRoutes);
+
 
 // app.post('/api/test', (req, res) => {
 //   console.log('Test route hit');
@@ -26,6 +28,9 @@ app.use('/api/amadeus', amadeusRoutes);
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/excursions', excursionRoutes);
+app.use('/api/bookings', bookingRoutes);
+app.use('/api/amadeus', amadeusRoutes);
+app.use('/api/geo', geoapifyRoutes);
 
 // Health check or root route (optional)
 app.get('/', (req, res) => {

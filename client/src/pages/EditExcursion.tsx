@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-const API = 'http://localhost:3000/api';
+const API = 'http://localhost:3001/api';
 
 const EditExcursion = () => {
   const { id } = useParams();
