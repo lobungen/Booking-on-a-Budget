@@ -5,7 +5,7 @@ function MyrtleBeachMainPage() {
   return (
     <div class="scrollable-list" id="destinationList">
       <div class="destination" onClick="selectDestination('Myrtle Beach')">
-        <h2>All Myrtle Beach Tours & Excursions in 2025</h2>
+        <h1>All Myrtle Beach Tours & Excursions in 2025</h1>
       </div>
       <p>
         Myrtle Beach is a popular vacation destination known for its beautiful
@@ -36,7 +36,9 @@ function MyrtleBeachMainPage() {
         <Button variant="secondary">Add to Plan</Button>
       </Card>
       <Card>
-        <Card.Header as="h3">Providenciales Grace Bay Golf Cart Tour </Card.Header>
+        <Card.Header as="h3">
+          Providenciales Grace Bay Golf Cart Tour{" "}
+        </Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>
@@ -54,7 +56,9 @@ function MyrtleBeachMainPage() {
         <Button variant="secondary">Add to Plan</Button>
       </Card>
       <Card>
-        <Card.Header as="h3">Polynesian Fire Luau and Dinner in Myrtle Beach</Card.Header>
+        <Card.Header as="h3">
+          Polynesian Fire Luau and Dinner in Myrtle Beach
+        </Card.Header>
         <Card.Body>
           <Card.Text>
             <p>Free Cancellation</p>

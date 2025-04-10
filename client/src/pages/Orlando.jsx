@@ -5,7 +5,7 @@ function OrlandoMainPage() {
   return (
     <div class="scrollable-list" id="destinationList">
       <div class="destination" onClick="selectDestination('Orlando')">
-        <h2>All Orlando Tours & Excursions in 2025</h2>
+        <h1>All Orlando Tours & Excursions in 2025</h1>
       </div>
       <p>
         Orlando, known for its theme parks and warm weather, offers a variety of

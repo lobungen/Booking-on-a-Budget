@@ -1,22 +1,63 @@
 #root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* Parent container to hold both .logo and .nav-links */
+.header-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center; /* Ensures space between logo and nav-links */
+  align-items: center; /* Vertically aligns logo and nav-links */
+  padding: 1em; /* Optional padding */
+  width: 100%;
+}
+
+/* Logo styling */
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; /* Vertically center the logo */
+  padding: 0.5em;
+  /* Adjust logo size and other styles here */
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em lime);
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em lime);
+
+.d-flex:hover {
+  border-color: limegreen;
 }
+
+.search-input {
+  width: 300px;  /* Adjust this value to your preferred width */
+}
+
+
+/* Navigation links styling */
+.nav-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; /* Vertically center the nav items */
+  gap: 1em; /* Space between links */
+  padding: 0.5em;
+  /* Adjust any other styles here */
+}
+
+
 
 @keyframes logo-spin {
   from {
@@ -108,12 +149,6 @@
   margin: 10px;
 }
 
-.d-flex {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-}
 
-.d-flex:hover {
-  border-color: limegreen;
-}
+
+
