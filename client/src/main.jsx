@@ -16,7 +16,7 @@ import './index.css';
 import App from './app.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import LosAngelesMainPage from './pages/LosAngeles.jsx';
-import HomePage from './pages/Homepage';
+import HomePage from './pages/HomePage';
 import NewYorkCityMainPage from './pages/NewYorkCity.jsx';
 import MyrtleBeachMainPage from './pages/MyrtleBeach.jsx';
 import OrlandoMainPage from './pages/Orlando.jsx';
