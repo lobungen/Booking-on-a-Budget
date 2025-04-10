@@ -24,8 +24,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -66,4 +64,70 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #333;
+}
+
+.footer-socials a img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.footer-socials a:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically if needed */
+  gap: 30px;                /* space between links */
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  flex-wrap: wrap;          /* wrap on small screens */
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: limegreen;
+}
+
+.footer-app-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #333;
+  flex-wrap: wrap;
+}
+
+.footer-app-links img {
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.footer-app-links img:hover {
+  transform: scale(1.05);
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #444;
 }
